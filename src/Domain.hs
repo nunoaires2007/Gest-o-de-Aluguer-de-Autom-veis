@@ -31,7 +31,7 @@ procurarAutomovel i (a:as)
 alugueresDoCliente :: ClienteId -> LAluguer -> LAluguer
 alugueresDoCliente _ [] = []
 alugueresDoCliente cid (a:as)
-  | aluguerCliente a == cid = a : alugueresDoCliente cid as
+  | idcliente a == cid = a : alugueresDoCliente cid as
   | otherwise               = alugueresDoCliente cid as
 
 -- | Dois períodos [i1,f1) e [i2,f2) sobrepõem-se se cada um começa antes de o outro acabar.
