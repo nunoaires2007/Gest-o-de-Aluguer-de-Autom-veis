@@ -24,7 +24,7 @@ data Cliente = Cliente {
 
 data Automovel = Automovel {
 
-    autoId :: Int
+    autoId :: AutoId
     , matricula :: String
     , marca :: String
     , modelo :: String
