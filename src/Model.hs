@@ -34,11 +34,11 @@ data Automovel = Automovel {
 
 data Aluguer = Aluguer {
     aluguerId :: AluguerId
-    , clienteId :: Int
+    , idcliente :: Int
     , aluguerAuto :: Automovel
     , inicio :: Data
     , fim :: Data
-    estado :: Estado
+    , estado :: Estado
 } deriving (Show, Eq)
 
 type LCliente = [Cliente]
