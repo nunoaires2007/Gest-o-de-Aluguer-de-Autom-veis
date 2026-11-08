@@ -24,7 +24,7 @@ data Cliente = Cliente {
 
 data Automovel = Automovel {
 
-    autoId :: Int
+    autoId :: AutoId
     , matricula :: String
     , marca :: String
     , modelo :: String
@@ -34,12 +34,12 @@ data Automovel = Automovel {
 
 data Aluguer = Aluguer {
     aluguerId :: AluguerId
-    , clienteId :: Int
+    , aluguer_clienteId :: ClienteId
     , aluguerAuto :: Automovel
     , inicio :: Data
     , fim :: Data
-    estado :: Estado
-} deriving (Show, Eq)
+    , estado :: Estado
+    } deriving (Show, Eq)
 
 type LCliente = [Cliente]
 type LAutomovel = [Automovel]
